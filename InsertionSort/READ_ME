@@ -1,1 +1,4 @@
 The insertion sort algorithm
+
+The insertion sort algorithm takes as a parameter an Array A[1, ..., n] containing a sequence of length n to be stored.
+
