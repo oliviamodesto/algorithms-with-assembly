@@ -1,4 +1,144 @@
 The insertion sort algorithm
 
-The insertion sort algorithm takes as a parameter an Array A[1, ..., n] containing a sequence of length n to be stored.
+The insertion sort algorithm takes an Array A[1, ..., n] as input containing a sequence of length n to be stored.
+The algorithm sorts the values in place by swapping them. It examines each value in the array and compares it with the values preceding it.
+If the two values are out of order, they are swapped.
+
+Complexity:
+
+worst case: O(n^2)
+best case: O(n)
+
+Example:
+
+Given the following array:
+
+A: [30 | 40 | 20 | 60 | 7 | 1 ]
+
+Our sorting begins at the second value stored in the array: 40
+
+A: [30 | 40 | 20 | 60 | 7 | 1 ]
+         key
+       
+We compare A[key] with its preceding value A[key-1]: is 40 less than 30 ?
+It is not.
+There aren't any more values left in the array.
+
+We move on to the third value stored in the array: 20
+
+A: [30 | 40 | 20 | 60 | 7 | 1 ]
+              key
+
+We compare A[key] with its preceding value A[key-1]: is 20 less than 40 ?
+It is.
+We swap 20 and 40 in the array. 
+The updated array is now:
+
+A: [30 | 20 | 40 | 60 | 7 | 1 ]
+         key     
+
+We compare A[key] with its preceding value A[key-1]: is 20 less than 30 ?
+It is.
+We swap 20 and 30 in the array.
+The updated array is now:
+
+A: [20 | 30 | 40 | 60 | 7 | 1 ]
+    key          
+
+There aren't any more values left in the array.
+
+We move on to the fourth value stored in the array: 60
+
+A: [20 | 30 | 40 | 60 | 7 | 1 ]
+              	   key
+
+We compare A[key] with its preceding value A[key-1]: is 60 less than 40 ?
+It is not.
+
+We move on to the fifth value stored in the array: 7
+
+A: [20 | 30 | 40 | 60 | 7 | 1 ]
+              	        key
+
+We compare A[key] with its preceding value A[key-1]: is 7 less than 60 ?
+It is.
+We swap 7 and 60 in the array.
+The updated array is now:
+
+A: [20 | 30 | 40 | 7 | 60 | 1 ]
+		   key              
+
+We compare A[key] with its preceding value A[key-1]: is 7 less than 40 ?
+It is.
+We swap 7 and 40 in the array.
+The updated array is now:
+
+A: [20 | 30 | 7 | 40 | 60 | 1 ]
+	      key
+
+We compare A[key] with its preceding value A[key-1]: is 7 less than 30 ?
+It is.
+We swap 7 and 30 in the array.
+The updated array is now:
+
+A: [20 | 7 | 30 | 40 | 60 | 1 ]
+	 key
+              
+We compare A[key] with its preceding value A[key-1]: is 7 less than 20 ?
+It is.
+We swap 7 and 20 in the array.
+The updated array is now:
+
+A: [7 | 20 | 30 | 40 | 60 | 1 ]
+    key
+
+There aren't any more values left in the array.
+
+We move on to the sixth value stored in the array: 1
+
+A: [7 | 20 | 30 | 40 | 60 | 1 ]
+			    key
+
+We compare A[key] with its preceding value A[key-1]: is 1 less than 60 ?
+It is.
+We swap 1 and 60 in the array.
+The updated array is now:
+
+A: [7 | 20 | 30 | 40 | 1 | 60 ]
+		       key
+
+We compare A[key] with its preceding value A[key-1]: is 1 less than 40 ?
+It is.
+We swap 1 and 40 in the array.
+The updated array is now:
+
+A: [7 | 20 | 30 | 1 | 40 | 60 ]
+		  key
+
+We compare A[key] with its preceding value A[key-1]: is 1 less than 30 ?
+It is.
+We swap 1 and 30 in the array.
+The updated array is now:
+
+A: [7 | 20 | 1 | 30 | 40 | 60 ]
+	     key
+
+We compare A[key] with its preceding value A[key-1]: is 1 less than 20 ?
+It is.
+We swap 1 and 20 in the array.
+The updated array is now:
+
+A: [7 | 1 | 20 | 30 | 40 | 60 ]
+	key
+
+We compare A[key] with its preceding value A[key-1]: is 1 less than 7 ?
+It is.
+We swap 1 and 7 in the array.
+The updated array is now:
+
+A: [1 | 7 | 20 | 30 | 40 | 60 ]
+    key
+
+There aren't any more values left in the array.
+The array is now sorted.
 
