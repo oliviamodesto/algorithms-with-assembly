@@ -1,4 +1,4 @@
-TITLE MaxSubarray2               (MaxSubarray2.asm)
+TITLE MaxSubarray               (MaxSubarray.asm)
 
 ; Program Description: Implementation of the maximum subarray algorithm
 ; Author: olivia
